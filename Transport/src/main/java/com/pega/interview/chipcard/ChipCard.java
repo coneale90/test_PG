@@ -1,4 +1,4 @@
-package com.pega.interview.chipcard;
+package main.java.com.pega.interview.chipcard;
 
 import java.util.Date;
 
@@ -32,6 +32,8 @@ public interface ChipCard {
     final int MILLISECOND = 1000;
     final int SECOND = 60;
     final int COST_MAX = 4;
+    final int ALLOWED_TIME = 5;
+    final long MAX_TRANFERT_TIME_MILLI = MAX_TRANSFER_TIME*MILLISECOND*SECOND;
 
     /**
      * Adds money to the chip-card.

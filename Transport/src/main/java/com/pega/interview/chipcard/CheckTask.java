@@ -1,4 +1,4 @@
-package com.pega.interview.chipcard;
+package main.java.com.pega.interview.chipcard;
 
 import java.util.TimerTask;
 
