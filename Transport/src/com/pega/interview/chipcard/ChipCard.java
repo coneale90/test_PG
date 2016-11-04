@@ -29,6 +29,9 @@ public interface ChipCard {
     final double BASIC_RATE = 0.78;
     final double KILOMETER_RATE = 0.11;
     final int MAX_TRANSFER_TIME = 35;
+    final int MILLISECOND = 1000;
+    final int SECOND = 60;
+    final int COST_MAX = 4;
 
     /**
      * Adds money to the chip-card.
@@ -73,6 +76,11 @@ public interface ChipCard {
      * @throws IllegalStateException in case some error occurred
      */
     String checkout(Date date, int distance);
+
+    void takeMoney();
+
+    void changeTravelStatus(boolean travelStatus);
+
 }
 
 	
