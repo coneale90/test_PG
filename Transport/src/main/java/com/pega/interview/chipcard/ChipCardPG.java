@@ -19,7 +19,6 @@ public class ChipCardPG implements ChipCard {
     Date lastCheckin;
 
     public ChipCardPG(long id){
-        timer = new Timer();
         money = 0;
         this.id = id;
         isTravelling = false;
@@ -54,6 +53,7 @@ public class ChipCardPG implements ChipCard {
             }
             lastCheckin = date;
             isTravelling = true;
+            timer = new Timer();
             checkTask = new CheckTask(this);
             timer.schedule(checkTask,new Date(date.getTime()+MAX_TRANFERT_TIME_MILLI));
             return message;

@@ -109,5 +109,4 @@ public class ChipCardPGTest {
         Assert.assertTrue(chipCard.getBalance() == amountRemaining);
     }
 
-
 }
